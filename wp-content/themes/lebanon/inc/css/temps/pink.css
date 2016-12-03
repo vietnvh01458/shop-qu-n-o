@@ -1,0 +1,112 @@
+a,a:visited{
+    color: #fa2d65;
+}
+
+a:hover,
+a:focus,
+.site-info a:hover{
+    color: #BD204B;
+}
+
+ul.lebanon-nav > li.menu-item.current-menu-item a,
+ul.lebanon-nav > li.menu-item.current-menu-parent a,
+ul.lebanon-nav > li.menu-item a:hover{
+    
+    border-bottom: 2px solid #BD204B;
+
+}
+
+ul.lebanon-nav > li > ul li.current-menu-item > a{
+    color: #fa2d65;
+}
+
+ul.lebanon-nav ul li a:hover{
+    color: #BD204B;
+}
+
+.lebanon-button.primary,
+button, 
+input[type="button"], 
+input[type="submit"],
+.woocommerce button.button.alt, 
+.woocommerce input.button.alt,
+.woocommerce #respond input#submit.alt, 
+.woocommerce a.button.alt,
+.woocommerce ul.products li.product .button,
+.button.wc-backward{
+    background-color: #fa2d65 !important;
+    color: #fff !important;
+    background: #fa2d65;
+    color: #fff;
+}
+
+button:hover, 
+input[type="button"]:hover, 
+input[type="submit"]:hover,
+.lebanon-button.primary:hover,
+.button.wc-backward:hover,
+.woocommerce ul.products li.product .button:hover,
+.woocommerce button.button.alt:hover, 
+.woocommerce input.button.alt:hover,
+.woocommerce #respond input#submit.alt:hover, 
+.woocommerce a.button.alt:hover{
+    background: #BD204B !important;
+}
+
+.entry-meta .fa{
+    background: #fa2d65;
+}
+
+.woocommerce .woocommerce-message{
+    border-top-color: #fa2d65;
+}
+
+.woocommerce .woocommerce-message:before{
+    color: #fa2d65;
+}
+
+.main-navigation .lebanon-cart,
+.lebanon-mobile-cart .lebanon-cart{
+    transition: 0.25s all ease-in-out;
+    -moz-transition: 0.25s all ease-in-out;
+    -webkit-transition: 0.25s all ease-in-out;
+    top: -5px;
+}
+
+
+#lebanon-featured,
+.woocommerce span.onsale{
+    background: #fa2d65;
+    color: #fff;
+}
+#lebanon-featured .fa{
+    color: #fff;
+}
+
+#authica-social a{
+    color: #fa2d65;
+}
+
+#authica-social a:hover{
+    color: #BD204B;
+}
+
+.scroll-top:hover{
+    background: #BD204B;
+}
+
+#lebanon-overlay-trigger{
+    border-color: transparent transparent #fa2d65 transparent;
+}
+
+#lebanon-overlay-trigger{
+    background: #fa2d65;
+}
+
+#lebanon-overlay-trigger:hover{
+    background: #BD204B;
+}
+
+.lebanon-blog-post{
+    background-color: #fa2d65;
+}

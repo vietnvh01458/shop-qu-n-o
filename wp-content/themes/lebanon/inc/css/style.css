@@ -1,0 +1,1297 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 24-Sep-2015, 11:46:32 PM
+    Author     : bilal
+*/
+
+
+/*
+## Header
+## Navigation
+## Homepage
+## Top A
+## Buttons
+
+*/
+
+a,a:visited,a:hover, a:focus,a:visited:hover{
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #4D5051;
+}
+
+body.admin-bar{
+    margin-top: -32px;
+}
+
+.text-right{
+    text-align: right !important;
+}
+
+.text-left{
+    text-align: left !important;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.table-display{
+    display: table;
+}
+
+.cell-display{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.noshow{
+    display: none; 
+}
+
+.row{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hidden{
+    display: none;
+}
+
+.entry-title{
+    
+    font-size: 32px;
+}
+
+#main.lebanon-page,
+#main.site-main{
+    margin-top: 50px;
+    
+}
+
+#main.site-main.frontpage-main{
+    margin-top: 0;
+}
+
+#main.lebanon-blog{
+    margin-top: 85px;
+    
+}
+
+#main.lebanon-page .entry-content .entry-title,
+#main.site-main .entry-content .entry-title{
+    margin-top: 0;
+}
+
+#main.lebanon-page #lebanon-page-jumbotron,
+#main.site-main #lebanon-page-jumbotron{
+    margin-top: -85px;
+}
+
+ul{
+    margin: 0;
+    /*padding-left: 0;*/
+}
+
+ul li{
+    /*list-style: none;*/
+    /*padding-left: 0;*/
+}
+.delay1{
+    -webkit-animation-delay: 0.1s;
+    -moz-animation-delay: 0.1s;
+    animation-delay: 0.1s;
+}
+
+.delay2{
+    -webkit-animation-delay: 0.2s;
+    -moz-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+
+.delay3{
+    -webkit-animation-delay: 0.5s;
+    -moz-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+}
+
+.delay-long{
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    animation-delay: 1s;    
+}
+
+.parallax{
+    position: relative;
+}
+
+[data-parallax="scroll"]{ 
+    background-attachment:fixed;
+    background-repeat-x: no-repeat;
+    background-repeat-y: repeat;
+    background-size: cover;
+}
+/*-- ## Header --*/
+
+.lebanon-branding{
+    float: left
+}
+.lebanon-header-menu{
+    float: right;
+}
+
+#lebanon-header #lebanon-logo img{
+    /*max-height: 150px;*/
+}
+
+#lebanon-logo{
+    line-height: 85px;
+}
+
+#lebanon-logo img{
+    max-height: 80px;
+    width: auto;
+    /*padding: 10px 0;*/
+}
+
+
+#lebanon-header{
+    background: #101010;
+/*    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;*/
+}
+
+#lebanon-header.sticky{
+    top: 0;
+    position: fixed;
+    
+}
+
+
+#lebanon-header .header-inner a{
+    color: #414141;
+}
+
+#lebanon-header .header-inner{
+    background: transparent;
+    height: 85px;
+    
+}
+#lebanon-header .header-inner a{
+    color: #fff;
+}
+
+#lebanon-header .header-inner ul#primary-menu{
+    height: 85px;
+    line-height: 75px;
+}
+
+#lebanon-header .header-inner ul.sub-menu a{
+    color: #fff;
+    line-height: 20px;
+}
+
+
+#masthead.site-header{
+    z-index: 1;
+    position: relative;
+    
+}
+
+.site-title{
+    margin: 0;
+    font-size: 45px;
+}
+
+.site-description{
+    margin: 0;
+    font-size: 16px;
+    line-height: 14px;
+    padding-top: 0;
+}
+
+.site-title a,
+.site-description{
+    /*color: #fff;*/
+}
+
+#lebanon-header .site-description{
+    color: #fff;
+}
+
+#lebanon-header.frontpage.sticky .site-description{
+    color: #414141;
+}
+.site-branding{
+    padding: 0px 10px;
+}
+
+#lebanon-search{
+    background: #111111;
+    background: rgba( 50, 50, 50, 0.9 );
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 150px;
+}
+
+#lebanon-search .search-field{
+    padding: 12px 15px;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 22px;
+}
+
+#lebanon-search .search-form{
+    display: inline-block;
+}
+
+#lebanon-search .fa.fa-close{
+    color: #fff;
+    cursor: pointer;
+    font-weight: 100;
+    font-size: 32px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#lebanon-search input[type="search"]{
+    
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #fff;
+    color: rgba( 255,255,255,0.9);
+}
+
+.main-navigation .lebanon-cart,
+.lebanon-mobile-cart .lebanon-cart{
+    padding: 5px 10px;
+    border-radius: 20px;
+    background: transparent !important;
+    color: #fff !important;
+    position: relative;
+    top: -5px;
+}
+.lebanon-mobile-cart .lebanon-cart{
+    position: initial;
+    display: none;
+}
+
+/*-- ## Navigation --*/
+
+#lebanon-add-menu{
+    text-align: center;
+    padding: 27px 0;
+}
+
+.sticky #lebanon-add-menu{
+    text-align: center;
+    padding: 15px 0;
+}
+
+#lebanon-add-menu a{
+    color: #fff;
+}
+
+.lebanon-mobile-cart{
+    display: none;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+#lebanon-header .slicknav_menu{
+    float: right;
+    background: rgb(27, 27, 27);
+    display: none;
+    position: absolute;
+    right: 0;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.slicknav_nav .slicknav_row:hover{
+    background: transparent !important;
+}
+
+.slicknav_nav a:hover{
+    background: transparent !important;
+}
+
+#lebanon-header .slicknav_menu .slicknav_icon-bar{
+    font-size: 30px;
+
+}
+
+.slicknav_btn{
+    background-color: #1b1b1b;
+}
+
+ul.lebanon-nav ul {
+    box-shadow: none;
+    text-align: left;
+    float: left;
+    position: absolute;
+    top: 41px;
+    left: -999em;
+    z-index: 99999;
+    background: transparent;
+    padding: 44px 0 15px 10px;
+
+}
+
+.sticky ul.lebanon-nav ul{
+    padding: 9px 0 15px 10px;
+    top: 21px;
+        
+}
+
+ul.lebanon-nav ul ul {
+    float: none;
+    left: 0 !important;
+    position: relative;
+    padding: 0 0 0 15px;;
+    margin-top: 5px;
+}
+
+ul.lebanon-nav ul ul li{
+    padding: 0px;
+    background: transparent;
+}
+
+ul.lebanon-nav ul li{
+    background: #101010;
+    background: rgba(0,0,0,0.7);
+    padding: 5px 15px 5px 15px;
+    width: 100%;
+    
+}
+ul.lebanon-nav ul li:hover ul{
+    left: 0;
+}
+
+
+ul.lebanon-nav ul li:last-child{
+    /*padding-bottom: 20px;*/
+}
+
+ul.lebanon-nav ul li a{
+    font-size: 12px;
+}
+
+ul.lebanon-nav{
+    /*padding: 40px 10px;*/
+    float: right;
+}
+ul.lebanon-nav a{
+    
+    font-size: 14px;
+    color: #f9f9f9;
+    color: rgba(255, 255, 255, 0.8);
+    
+}
+
+ul.lebanon-nav > li.menu-item{
+    margin-right: 25px;
+}
+
+ul.lebanon-nav > li.menu-item a{
+    margin-right: 0;
+    font-weight: 600;
+    padding-bottom: 7px;
+    transition: 0.2s all ease-in-out;
+    -moz-transition: 0.2s all ease-in-out;
+    -webkit-transition: 0.2s all ease-in-out;
+    letter-spacing: 2px;
+    border-bottom: 2px solid transparent;
+    
+}
+
+ul.lebanon-nav > li.menu-item.current-menu-item a,
+ul.lebanon-nav > li.menu-item.current-menu-parent a,
+ul.lebanon-nav > li.menu-item a:hover{
+    
+    border-bottom: 2px solid transparent;
+
+}
+
+ul.lebanon-nav > li.menu-item.current-menu-parent ul a{
+    border-bottom: none !important;
+}
+
+ul.lebanon-nav > li.menu-item.current-menu-item ul li a{
+    border-bottom: none;
+}
+
+
+ul.lebanon-nav > li.menu-item.menu-item-has-children > a:after{
+    font-family: FontAwesome;
+    content: "\f078";
+    margin-left: 8px;
+    margin-right: 10px;
+    font-weight: 100;
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+/*-- Featured Post --*/
+#lebanon-featured-post{
+    overflow: hidden;
+}
+
+#lebanon-featured-post #slide1{
+    background-size: cover;
+    height: 400px;
+    position: relative;
+    background-attachment: fixed;
+} 
+
+#lebanon-featured-post #slide1 .slide-details{
+    position: absolute;
+    bottom: 75px;
+} 
+
+#lebanon-featured-post #slide1 .overlay{
+    background: rgba( 0,0,0,0.2);
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#lebanon-featured-post #slide1 h2{
+    font-size: 44px;
+    line-height: 46px;
+    color: #fff;
+}
+
+/*-- ## Homepage --*/
+
+
+
+
+#lebanon-jumbotron{
+    overflow: hidden;
+    height: 100%;
+}
+
+#lebanon-jumbotron .hero{
+    /*position: absolute;*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-size: cover;
+}
+
+#lebanon-jumbotron .lebanon-button{
+    margin-bottom: 10px;
+}
+
+#lebanon-jumbotron .overlay{
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+    text-align: center;
+}
+
+
+#lebanon-jumbotron .hero img{
+    width: 100%;
+}
+
+#lebanon-jumbotron h2.header-text{
+    font-size: 46px;
+    color: #fff;
+}
+
+.slide1_button{
+    background: #414141;
+    background: RGBA(65,65,65,0.7);
+    display: inline-block;
+    padding: 12px 15px;
+}
+
+.slider-bottom{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    width: 100%;
+    background: transparent;
+}
+
+.slider-bottom .scroll-down{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 100;
+    animation-delay: 1.5s;
+    position: relative;
+    top: 20px;
+    transition: 0.3s all ease-in-out;
+    -moz-transition: 0.3s all ease-in-out;
+    -webkit-transition: 0.3s all ease-in-out;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+}
+
+.slider-bottom .scroll-down:hover{
+    
+    font-size: 34px;    
+}
+
+#lebanon-jumbotron .camera_overlayer{
+    background: rgba(0,0,0,0.4);
+}
+
+#lebanon-featured{
+    width: 100%;
+    min-height: 320px;
+    background: #e1e1e1;
+    color: #000;
+    
+    text-align: center;
+    overflow: hidden;
+    z-index: 0;
+    position: relative;
+}
+
+
+#lebanon-video{
+    
+    width: 100%;
+    position: relative;
+    
+}
+
+#lebanon-featured .featured-box{
+    padding: 50px 30px;
+    min-height: 320px;
+    cursor: pointer;
+}
+
+#lebanon-featured .featured-box2,
+#lebanon-featured .featured-box3{
+    /*background: rgba(50,50,50, 0.1);*/
+}
+
+#lebanon-featured .lebanon-icon{
+    color: #333;
+    font-size: 38px;
+    margin: 5px 0 25px 0;
+    position: relative;
+    
+}
+
+#lebanon-featured .lebanon-title{
+    margin: 0 0 20px 0;
+    font-size: 26px;
+    
+}
+
+#lebanon-featured .lebanon-desc{
+    margin: 0 0 20px 0;
+    font-size: 16px;
+    position: relative;
+}
+
+.frontpage-blog{
+    margin: 30px 0;
+}
+
+
+.overlay-widget{
+    color: #414141;
+    display: none;
+    position: fixed;
+    background: rgba(255,255,255,0.96);
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+}
+
+
+#lebanon-overlay-trigger{
+    width: 40px;
+    height: 80px;
+    position: fixed;
+    left: 0;
+    bottom: 100px;
+    opacity: 0.9;
+    cursor: pointer;
+    z-index: 1;
+    background: #717171;
+    text-align: center;
+    line-height: 80px;
+    z-index: 99;
+}
+
+#lebanon-overlay-trigger:hover{
+    opacity: 1.0;
+}
+
+
+#lebanon-overlay-trigger.open{
+
+}
+
+#lebanon-overlay-trigger span.fa{
+
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    
+}
+
+/*-- ## Top A --*/
+#lebanon-topa{
+    padding: 50px 0;
+    overflow: hidden;
+}
+
+#lebanon-topa .heading{
+    font-size: 38px;
+    line-height: 48px;
+    margin: 8px 0 15px 0;
+    font-weight: 800;
+}
+
+#lebanon-topa .heading:after{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    width: 220px;
+    margin-top: 13px;
+    margin-left: -110px;
+    border-top: 4px solid rgba(234, 234, 234, 0.6);
+}
+
+#lebanon-topa .sub-heading{
+    font-size: 25px;
+    line-height: 27px;
+    margin: 20px 0 5px 0;
+    font-style: italic;
+    font-weight: 500;
+    color: #AAA;
+}
+
+#lebanon-topa .description{
+    font-size: 22px;
+    padding: 15px 0 0 0;
+    
+}
+
+#lebanon-topa .wp-post-image{
+    width: 50%;
+    
+}
+
+/*-- ## Buttons --*/
+.lebanon-button,
+a.lebanon-button,
+button, 
+input[type="button"], 
+input[type="reset"], 
+input[type="submit"],
+.woocommerce ul.products li.product .button{
+    padding: 10px 15px !important;
+    color: #fff;
+    background: #717171;
+    margin-right: 10px !important;
+    display: inline-block;
+    cursor: pointer;
+    transition: 0.2s all ease-in-out;
+    border-radius: 0;
+}
+
+.lebanon-button.large{
+    padding: 15px 25px;
+    font-size: 20px;
+}
+
+.lebanon-button:hover{
+    color: #fff;
+    background: #505050;
+}
+
+.lebanon-button.default{
+    color: #fff;
+    background: #e1e1e1;  
+}
+
+.lebanon-button.default:hover{
+    background: #e3e3e3;
+    color: #fff;
+}
+
+/*-- 5. Footer --*/
+.lebanon-footer{
+    
+    background-repeat-x: no-repeat;
+    background-repeat-y: repeat;
+    background-size: cover;
+    color: #fff;
+    color: rgba(255,255,255,0.9);
+    overflow: hidden;
+    /*padding: 40px 0 0 0;*/
+}
+
+.lebanon-footer > div{
+    overflow: hidden;
+    background: rgba(0,0,0, 0.6);  
+    padding: 55px 0 30px 0px;
+    min-height: 350px;
+}
+
+.lebanon-footer ul li{
+    /*border-bottom: 2px solid #000;*/
+    padding-bottom: 20px !important;
+}
+
+.site-info{
+    background: #fff;
+    color: #414141;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+}
+
+.site-info a,
+.site-info a:visited{
+    color: #414141;
+}
+.lebanon-footer-nav{
+    margin-top: 10px;
+}
+
+.lebanon-footer-nav li{
+    display: inline-block;
+}
+
+.lebanon-footer-nav li a{
+    border-bottom: 1px solid rgba(255,255,255,0.9);
+}
+
+.lebanon-footer-nav li:after{
+    content: ' / ';
+    color: #fff;
+}
+
+.lebanon-footer-nav li:last-child:after{
+    content: '';
+}
+
+#authica-social{
+    margin: 10px 0 20px 0;
+}
+
+#authica-social a{
+    display: inline-block;
+    margin-right: 12px;
+    font-size: 18px;
+    color: #fff;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.scroll-top{
+    padding: 20px;
+    color: #fff;
+    color: rgba( 255,255,255,0.9);
+    font-size: 14px;
+    font-weight: 100;
+    background: #000;
+    background: rgb(10,10,10);
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    transition: 0.2s all ease-in-out;
+    -moz-transition: 0.2s all ease-in-out;
+    -webkit-transition: 0.2s all ease-in-out;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.scroll-top:hover{
+    background: #e1e1e1;
+}
+
+.lebanon-copyright{
+    font-size: 12px;
+    padding: 10px 0;
+}
+
+#footer-menu li ul{
+    display: none;
+}
+
+.site-info a.rel{
+    display: block !important;
+}
+
+/*-- 6. Sidebar --*/
+
+#lebanon-sidebar{
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+#lebanon-sidebar .widget-title{
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 0 15px 0;
+}
+
+#lebanon-sidebar ul li{
+    margin-bottom: 10px;
+}
+
+#lebanon-sidebar aside{
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e1e1e1;
+    padding-bottom: 10px;
+}
+
+/*-- 7. Page --*/
+#lebanon-page-jumbotron{
+    width: 100%;
+    background-size: cover;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+
+#lebanon-page-jumbotron .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.2);
+}
+
+#lebanon-page-jumbotron .entry-title{
+    /*margin-top: 150px;*/
+    text-align: center;
+    color: #fff;
+    position: relative;
+    font-size: 46px;
+    margin: 0;
+}
+
+/*-- 8. Blog --*/
+
+#main.lebanon-blog .wp-post-image,
+.homepage-page-content .post .wp-post-image{
+    width: 100%;
+}
+
+.homepage-page-content .post .entry-title{
+    display: block;
+}
+
+#main.lebanon-blog .entry-title{
+    margin: 8px 0;
+}
+
+.entry-meta{
+    margin-top: 30px;
+    font-size: 16px;
+}
+
+.entry-meta .fa{
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    background: #4D5051;
+    color: #fff;
+    border-radius: 100%;
+    font-size: 12px;
+    text-align: center;
+    line-height: 21px;
+    margin-bottom: 1px;
+}
+
+.entry-meta .entry-date{
+    margin-top: 30px;
+    color: #4D5051;
+    
+}
+
+#lebanon-page-jumbotron .cat-links .fa{
+    color: #fff;    
+}
+
+#lebanon-page-jumbotron .cat-links a{
+    color: #fff;
+    font-size: 18px;
+}
+
+.post-edit-link{
+    display: none;
+}
+
+#main.lebanon-blog .entry-meta .meta-detail{
+    text-align: left;
+}
+
+#main.lebanon-blog .entry-meta .meta-detail > span{
+    margin-right: 12px;
+}
+
+.lebanon-blog-post{
+    width: 100%;
+    height: 250px;
+    margin-bottom: 0;
+/*    box-shadow: 1px 1px 3px #BFBFBF;
+    -moz-box-shadow: 1px 1px 3px #BFBFBF;
+    -webkit-box-shadow: 1px 1px 3px #BFBFBF;*/
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 3px solid #fff;
+}
+
+.lebanon-blog-post .entry-meta .entry-date{
+    color: #fff;
+}
+
+@media( min-width: 769px ) {
+    .lebanon-blog-post:nth-of-type(7n+1) {
+        width: 24%;
+        height: 250px;
+    }
+
+    .lebanon-blog-post:nth-of-type(7n+2) {
+        width: 48%;
+        height: 250px;
+    }
+
+    .lebanon-blog-post:nth-of-type(7n+3) {
+        width: 24%;
+        height: 500px;
+    }
+
+    .lebanon-blog-post:nth-of-type(7n+4) {
+        width: 48%;
+        height: 500px;
+    }
+
+    .lebanon-blog-post:nth-of-type(7n+5),
+    .lebanon-blog-post:nth-of-type(7n+6),
+    .lebanon-blog-post:nth-of-type(7n+7){
+        width: 24%;
+        height: 250px;
+    }
+}
+
+
+.lebanon-blog-post:hover .post-panel-content{
+    display: block;
+    background: rgba(0,0,0,0.2);
+}
+
+.lebanon-blog-post:nth-of-type(7n+2) .post-panel-content,
+.lebanon-blog-post:nth-of-type(7n+3) .post-panel-content,
+.lebanon-blog-post:nth-of-type(7n+4) .post-panel-content{
+    display: block;
+}
+
+
+.lebanon-blog-post .post-panel-content{
+    padding: 0 15px 15px 15px;
+    background: rgba(0,0,0,0.6);
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 0.2s all ease-in-out;
+    color: #fff;
+
+}
+
+.lebanon-blog-post .post-panel-content a{
+    color: #fff;
+}
+
+.lebanon-blog-post .post-panel-content h2.entry-title{
+    font-size: 24px;
+    line-height: 26px;
+}
+
+.lebanon-blog-post.masonry{
+    width: 46%;
+    margin-right: 1%;
+}
+
+.lebanon-blog-page{
+    margin-top: 40px;
+ 
+}
+
+.continue-reading{
+    margin-top: 15px;
+}
+
+/*------------- Pagination --------------*/
+.lebanon-pagination{
+    text-align: center;
+    margin-top: 15px;
+}
+.lebanon-pagination span,
+.lebanon-pagination a{
+    margin-right: 4px;
+}
+
+.post-navigation .nav-next,
+.post-navigation .nav-previous{
+    display: none;
+}
+/* ------- calendar widget --------------*/
+.widget_calendar {float: left;}
+#wp-calendar {width: 100%; }
+#wp-calendar caption { text-align: right; color: #333; font-size: 12px; margin-top: 10px; margin-bottom: 15px; }
+#wp-calendar thead { font-size: 10px; }
+#wp-calendar thead th { padding-bottom: 10px; }
+#wp-calendar tbody { color: #aaa; }
+#wp-calendar tbody td { background: #f5f5f5; border: 1px solid #fff; text-align: center; padding:8px;}
+#wp-calendar tbody td:hover { background: #fff; }
+#wp-calendar tbody .pad { background: none; }
+#wp-calendar tfoot #next { font-size: 10px; text-transform: uppercase; text-align: right; }
+#wp-calendar tfoot #prev { font-size: 10px; text-transform: uppercase; padding-top: 10px; }
+
+
+/*----------------- Lebanon Recent Articles --------------*/
+#lebanon_recent_posts > div {
+    margin-bottom: 30px;
+
+}
+#lebanon_recent_posts img{
+    width: 100%;
+}
+#lebanon_recent_posts img:hover{
+
+}
+#lebanon_recent_posts .lebanon-single-post{
+    overflow: hidden;
+
+}
+#lebanon_recent_posts .lebanon-single-post > div a{
+
+}
+#lebanon_recent_posts .lebanon-single-post > div{
+    position: relative;
+
+
+    overflow: hidden;
+}
+#lebanon_recent_posts .title{
+    font-weight: 700;
+}
+#lebanon_recent_posts .lebanon-single-post > div:hover img{
+        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);   
+}
+#lebanon_recent_posts .lebanon-single-post > div img{
+        transition: 0.3s all ease-in-out;
+        -moz-transition: 0.3s all ease-in-out;
+        -webkit-transition: 0.3s all ease-in-out;
+}
+#lebanon_recent_posts .lebanon-single-post > div img:hover{
+
+}
+#lebanon_recent_posts .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding-top: 10%; 
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+    transition: 0.3s all ease-in-out;
+    -moz-transition: 0.3s all ease-in-out;
+    -webkit-transition: 0.3s all ease-in-out;
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+}
+#lebanon_recent_posts .overlay:hover{
+    background: rgba(0,0,0,0);
+}
+#lebanon_recent_posts .overlay .fa-external-link{
+    opacity: 0;
+
+    text-align: center;
+    font-size: 26px;
+    transition: 0.2s all linear;
+    -moz-transition: 0.2s all linear;
+    -webkit-transition: 0.2s all linear;
+}
+#lebanon_recent_posts .overlay:hover .fa-external-link{
+    opacity: 1.0;
+    transform: scale( 1.5 );
+    -webkit-transform: scale( 1.5 );
+    -moz-transform: scale( 1.5 );
+}
+
+#lebanon-homepage-widget{
+
+    overflow: hidden;
+    text-align: center;
+}
+
+#lebanon-homepage-widget > div{
+    overflow: hidden;
+    background: rgba(10,10,10, 0.6);
+    padding: 55px 0 40px 0px;
+    color: #fff;
+    color: rgba(255,255,255,0.9);
+    min-height: 300px;
+}
+
+#lebanon-topb .widget ul{
+    padding-left: 0;
+    list-style: none;
+}
+
+.woocommerce div.product p.price, 
+.woocommerce div.product span.price,
+.woocommerce ul.products li.product .price{
+    color: #000;
+}
+
+@media( min-width: 320px ) and ( max-width: 400px ) {
+    
+    
+    
+    
+}
+
+
+@media( min-width: 401px ) and ( max-width: 600px ) {
+    
+    
+    
+}
+
+@media( min-width : 601px ) and ( max-width: 980px ) {
+    
+    
+    
+}
+
+@media( max-width: 991px ) {
+    
+    #lebanon-header .slicknav_menu{
+        display: block;
+    }
+    
+    #lebanon-header .header-inner,
+    #lebanon-header .header-inner{
+        background: #1b1b1b;
+        height: 70px;
+    }
+
+    #lebanon-header .header-inner #lebanon-logo{
+        
+        line-height: 50px;
+        
+    }
+    
+    #lebanon-header .header-inner #lebanon-logo img{
+        
+        max-height: 50px;
+            margin-top: 10px;
+        
+    }
+    
+    #lebanon-header .header-inner .site-title{
+        font-size: 28px;
+        line-height: 50px;
+        margin: 0;
+    }
+    
+    .site-description{
+        display: none;
+    }
+    
+    #mobile-nav{
+        display: block;
+    }
+    
+    #site-navigation{
+        display: none;
+    }
+    
+    .site-branding{
+        float: left;
+    }
+    
+    .lebanon-mobile-cart{
+        display: inline-block;
+        float: right;
+    }
+    
+    
+}
+
+@media( min-width: 992px ) {
+    
+    
+    
+    
+}
+
+@media( max-width: 768px ) {
+    
+    #lebanon-topa .wp-post-image{
+        width: 100%;
+
+    }
+        
+    .scroll-top{
+        float: none;
+        padding: 10px;
+        display: inline-block;
+        position: initial;
+        margin-top: 20px;
+    }
+}
+
+

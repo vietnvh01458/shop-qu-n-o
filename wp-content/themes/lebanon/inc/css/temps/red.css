@@ -1,0 +1,114 @@
+
+
+a,a:visited{
+    color: #e94736;
+}
+
+a:hover,
+a:focus,
+.site-info a:hover{
+    color: #d44233;
+}
+
+ul.lebanon-nav > li.menu-item.current-menu-item a,
+ul.lebanon-nav > li.menu-item.current-menu-parent a,
+ul.lebanon-nav > li.menu-item a:hover{
+    
+    border-bottom: 2px solid #d44233;
+
+}
+
+ul.lebanon-nav > li > ul li.current-menu-item > a{
+    color: #e94736;
+}
+
+ul.lebanon-nav ul li a:hover{
+    color: #d44233;
+}
+
+.lebanon-button.primary,
+button, 
+input[type="button"], 
+input[type="submit"],
+.woocommerce button.button.alt, 
+.woocommerce input.button.alt,
+.woocommerce #respond input#submit.alt, 
+.woocommerce a.button.alt,
+.woocommerce ul.products li.product .button,
+.button.wc-backward{
+    background-color: #e94736 !important;
+    color: #fff !important;
+    background: #e94736;
+    color: #fff;
+}
+
+button:hover, 
+input[type="button"]:hover, 
+input[type="submit"]:hover,
+.lebanon-button.primary:hover,
+.button.wc-backward:hover,
+.woocommerce ul.products li.product .button:hover,
+.woocommerce button.button.alt:hover, 
+.woocommerce input.button.alt:hover,
+.woocommerce #respond input#submit.alt:hover, 
+.woocommerce a.button.alt:hover{
+    background: #d44233 !important;
+}
+
+.entry-meta .fa{
+    background: #e94736;
+}
+
+.woocommerce .woocommerce-message{
+    border-top-color: #e94736;
+}
+
+.woocommerce .woocommerce-message:before{
+    color: #e94736;
+}
+
+.main-navigation .lebanon-cart,
+.lebanon-mobile-cart .lebanon-cart{
+    transition: 0.25s all ease-in-out;
+    -moz-transition: 0.25s all ease-in-out;
+    -webkit-transition: 0.25s all ease-in-out;
+    top: -5px;
+}
+
+
+#lebanon-featured,
+.woocommerce span.onsale{
+    background: #e94736;
+    color: #fff;
+}
+#lebanon-featured .fa{
+    color: #fff;
+}
+
+#authica-social a{
+    color: #e94736;
+}
+
+#authica-social a:hover{
+    color: #d44233;
+}
+
+.scroll-top:hover{
+    background: #d44233;
+}
+
+#lebanon-overlay-trigger{
+    border-color: transparent transparent #e94736 transparent;
+}
+
+#lebanon-overlay-trigger{
+    background: #e94736;
+}
+
+#lebanon-overlay-trigger:hover{
+    background: #d44233;
+}
+
+.lebanon-blog-post{
+    background-color: #e94736;
+}
